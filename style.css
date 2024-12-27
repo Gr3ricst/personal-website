@@ -1,15 +1,52 @@
-body {
+/* Resetting default styles */
+body, h1, ul, li, a {
     margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f4f4f4; /* Light background */
-    font-family: Arial, sans-serif;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
 }
 
-h1 {
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f9;
+}
+
+/* Title styling */
+.title {
     font-size: 3rem;
-    color: #333; /* Dark text */
-    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Navigation bar styling */
+.nav-bar {
+    display: flex;
+    gap: 20px;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+.nav-bar li {
+    font-size: 1.2rem;
+}
+
+.nav-bar a {
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.nav-bar a:hover {
+    background-color: #555;
 }
