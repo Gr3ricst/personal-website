@@ -3,23 +3,61 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Sliding Sections</title>
+    <title>My Personal Website</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="#" onclick="slideToSection(0)">Home</a>
+        <a href="#" onclick="slideToSection(1)">Projects</a>
+        <a href="#" onclick="slideToSection(2)">Skills</a>
+        <a href="#" onclick="slideToSection(3)">Other Interests</a>
+        <a href="#" onclick="slideToSection(4)">About Me</a>
+    </nav>
+
+    <!-- Main Container -->
     <div class="container">
-        <!-- First section with top bar -->
+        <!-- Title Screen -->
         <section class="section" id="section1">
-            <div class="top-bar">
-                <h1>My Top Bar</h1>
+            <div class="title-content">
+                <h1>Welcome to My Website</h1>
+                <p>A showcase of my work, skills, and interests.</p>
+                <p>Scroll down to learn more</p>
             </div>
         </section>
 
-        <!-- Remaining sections (2 - 5) -->
-        <section class="section" id="section2"></section>
-        <section class="section" id="section3"></section>
-        <section class="section" id="section4"></section>
-        <section class="section" id="section5"></section>
+        <!-- Projects -->
+        <section class="section" id="section2">
+            <div class="content">
+                <h2>Projects</h2>
+                <p>Here are some of my projects. (Placeholder content for now.)</p>
+            </div>
+        </section>
+
+        <!-- Skills & Experience -->
+        <section class="section" id="section3">
+            <div class="content">
+                <h2>Skills & Experience</h2>
+                <p>Programming languages, frameworks, tools, and certifications.</p>
+            </div>
+        </section>
+
+        <!-- Other Interests -->
+        <section class="section" id="section4">
+            <div class="content">
+                <h2>Other Interests</h2>
+                <p>Clubs, hobbies, extracurriculars, and personal interests.</p>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section class="section" id="section5">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>A short introduction about myself, my university, and my passions.</p>
+            </div>
+        </section>
     </div>
 
     <script src="script.js"></script>
