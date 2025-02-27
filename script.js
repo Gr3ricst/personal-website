@@ -47,3 +47,17 @@ document.addEventListener("touchend", (event) => {
         slideToSection(currentSection - 1);
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const container = document.querySelector(".triangle-container");
+
+    // Grid settings
+    const rows = 10;
+    const cols = 10;
+
+    for (let i = 0; i < rows * cols; i++) {
+        const triangle = document.createElement("div");
+        triangle.classList.add("triangle");
+        container.appendChild(triangle);
+    }
+});
