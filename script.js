@@ -51,7 +51,8 @@ document.addEventListener("touchend", (event) => {
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector(".triangle-container");
 
-    // Grid settings
+    if (!container) return; // Prevent errors if container is missing
+
     const rows = 10;
     const cols = 10;
 
